@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CS492 Photo App</string>
+    <string name="bottom_navigation_label_1">Gallery</string>
+    <string name="bottom_navigation_label_2">Search</string>
+    <string name="bottom_navigation_label_3">Create a Post</string>
+
+    <string name="pref_category">Search Designs</string>
+
+    <string name="pref_color_title">Search by color</string>
+    <string name="pref_color_key">color</string>
+
+    <string name="pref_location_title">Search by Location</string>
+    <string name="pref_location_key">location</string>
+</resources>

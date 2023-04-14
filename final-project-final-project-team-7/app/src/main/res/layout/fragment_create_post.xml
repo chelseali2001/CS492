@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/TakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/BSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/IVPreviewImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:maxHeight="150dp"
+            android:maxWidth="150dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/IVPreviewImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Write Tags:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/tag_text"/>
+
+        <EditText
+            android:id="@+id/tag_input"
+            android:layout_width="275dp"
+            android:layout_height="100dp"
+            android:padding="12dp"
+            android:layout_below="@id/IVPreviewImage"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:gravity="top|left"
+            android:hint="Write tags here..."
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tag_input"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Description:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/description_text"/>
+
+        <EditText
+            android:id="@+id/description_input"
+            android:layout_width="275dp"
+            android:layout_height="100dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/tag_input"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:gravity="top|left"
+            android:hint="Add description..."
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:scrollbars="vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/description_input"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:text="Color:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/color_text" />
+
+    <EditText
+        android:id="@+id/color_input"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_input"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:gravity="top|left"
+        android:hint="Type here..."
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/color_input"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:text="Location:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/location_text" />
+
+    <EditText
+        android:id="@+id/location_input"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_input"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top|left"
+        android:hint="Type here..."
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:layout_below="@+id/location_input"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+</RelativeLayout>

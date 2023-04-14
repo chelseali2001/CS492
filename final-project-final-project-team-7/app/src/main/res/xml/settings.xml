@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/pref_category">
+        <EditTextPreference
+            android:title="@string/pref_color_title"
+            android:key="@string/pref_color_key"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:title="@string/pref_location_title"
+            android:key="@string/pref_location_key"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

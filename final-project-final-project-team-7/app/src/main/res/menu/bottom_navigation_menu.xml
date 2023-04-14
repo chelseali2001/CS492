@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/gallery"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_image_24"
+        android:title="@string/bottom_navigation_label_1"/>
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/bottom_navigation_label_2" />
+b    <item
+        android:id="@+id/create_post"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_post"
+        android:title="@string/bottom_navigation_label_3"/>
+</menu>
